@@ -1,6 +1,6 @@
 # Redirects from what the browser requests to what we serve
 /home              /index.html
 /contact           /contact/contact.html
-/about             /about.html
-/blog              /blog.html
+/party             /party/party-invite.html
+/card2018           /christmas/card2018.html
 /blog/single-post   /single-post.html
