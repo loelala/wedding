@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  menuVisible = false;
+
+  constructor() {
+  }
 
   ngOnInit() {
+  }
+
+  public showMenu(): void {
+    this.menuVisible = this.menuVisible ? false : true;
   }
 
 }
