@@ -19,4 +19,8 @@ export class HeaderComponent implements OnInit {
     this.menuVisible = this.menuVisible ? false : true;
   }
 
+  public setVisibilityOfMenu(event: boolean): void {
+    this.menuVisible = event;
+  }
+
 }

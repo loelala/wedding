@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  @Output()
+  closeMenu: EventEmitter<boolean> = new EventEmitter();
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  redirect(route: string) {
+    this.closeMenu.emit(true);
+    this.router.navigate([route]);
   }
 
 }

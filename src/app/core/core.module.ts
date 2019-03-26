@@ -6,7 +6,7 @@ import { MenuComponent } from './components/menu/menu.component';
 @NgModule({
   declarations: [HeaderComponent, MenuComponent],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports: [
     HeaderComponent,

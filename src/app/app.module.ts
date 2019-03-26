@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { PartyComponent } from './party/party.component';
 import { HomeComponent } from './home/home.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './home/home.component';
     NgbModule,
     AppRoutingModule,
     CoreModule,
-    NgwWowModule
+    NgwWowModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

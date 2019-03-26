@@ -1,9 +1,8 @@
 <div class="list-menu"><i class="icon ion-md-close-round close-iframe"></i>
   <div class="intro-inner">
     <ul id="nav-menu">
-      <li><a routerLink="/home">Home</a></li>
-      <li><a routerLink="/party">Zur Party</a></li>
-      <li><a>Zur Weihnachtskarte 2018</a></li>
+      <li (click)="redirect('home')"><a>Home</a></li>
+      <li (click)="redirect('party')"><a>Zur Party</a></li>
     </ul>
   </div>
 </div>

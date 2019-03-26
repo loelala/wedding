@@ -11,7 +11,7 @@
                   <i class="icon ion-md-menu" (click)="showMenu()"></i>
                 </div>
                 <ng-container *ngIf="menuVisible">
-                  <app-menu></app-menu>
+                  <app-menu (closeMenu)="setVisibilityOfMenu(event)"></app-menu>
                 </ng-container>
               </div>
             </div>
