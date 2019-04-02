@@ -82,7 +82,7 @@
             border-radius: 100%;
         }
 
-        @media (--small) {
+        @media (max-width: 1024px) {
 
             /*height: 110vh;*/
             & .hero-container {
@@ -139,23 +139,11 @@
             }
 
             & a {
-                color: var(--black);
+                color: $black;
                 position: relative;
                 margin-left: -70px;
                 text-decoration: none;
                 font-size: 18px;
-
-                &:after {
-                    content: " ";
-                    width: 100%;
-                    height: 1px;
-                    position: absolute;
-                    bottom: -6px;
-                    left: 50%;
-                    background: black;
-                    transform: translateX(-50%);
-                    transition: .2s;
-                }
 
                 &:hover {
                     &:after {
@@ -166,23 +154,11 @@
             }
 
             & link {
-                color: var(--black);
+                color: $black;
                 position: relative;
                 margin-left: -70px;
                 text-decoration: none;
                 font-size: 18px;
-
-                &:after {
-                    content: " ";
-                    width: 100%;
-                    height: 1px;
-                    position: absolute;
-                    bottom: -6px;
-                    left: 50%;
-                    background: black;
-                    transform: translateX(-50%);
-                    transition: .2s;
-                }
 
                 &:hover {
                     &:after {
@@ -192,7 +168,7 @@
                 }
             }
 
-            @media (--small) {
+            @media (max-width: 1024px) {
                 margin-top: 10vw;
 
                 & p {
@@ -221,23 +197,11 @@
 
             & a {
                 z-index: 10;
-                color: var(--black);
+                color: v$black;
                 position: relative;
                 margin-left: -70px;
                 text-decoration: none;
                 font-size: 18px;
-
-                &:after {
-                    content: " ";
-                    width: 100%;
-                    height: 1px;
-                    position: absolute;
-                    bottom: -6px;
-                    left: 50%;
-                    background: black;
-                    transform: translateX(-50%);
-                    transition: .2s;
-                }
 
                 &:hover {
                     &:after {
@@ -247,7 +211,7 @@
                 }
             }
 
-            @media (--small) {
+            @media (max-width: 1024px) {
                 margin-bottom: 14vw;
 
                 & a {
@@ -331,7 +295,7 @@
                 }
             }
 
-            @media (--small) {
+            @media (max-width: 1024px) {
                 & .content-container {
                     top: 18vh;
                 }
@@ -396,23 +360,11 @@
             }
 
             & a {
-                color: var(--black);
+                color: $black;
                 position: relative;
                 margin-left: 0px;
                 text-decoration: none;
                 font-size: 18px;
-
-                &:after {
-                    content: " ";
-                    width: 100%;
-                    height: 0px;
-                    position: absolute;
-                    bottom: -6px;
-                    left: 50%;
-                    background: black;
-                    transform: translateX(-50%);
-                    transition: .2s;
-                }
 
                 &:hover {
                     &:after {
@@ -422,7 +374,7 @@
                 }
             }
 
-            @media (--small) {
+            @media screen and (max-with: $media-width) {
                 & .content-container {
                     top: 25vh;
                     bottom: 25vh;
@@ -497,7 +449,7 @@
                     }
 
                     & h3 {
-                        font-family: var(--font-heading);
+                        font-family: $font-heading;
                         font-size: 3rem;
                     }
 
@@ -604,7 +556,7 @@
                 }
             }
 
-            @media (--small) {
+            @media screen and (max-with: $media-width) {
                 & .right-container {
                     top: 0vh;
                 }
@@ -616,7 +568,7 @@
                 left: 62vw;
 
                 & h1 {
-                    font-family: "Big Caslon FB", "Big Caslon", serif;
+                    font-family: $font-heading;
                     margin-left: -70px;
                 }
             }
@@ -655,7 +607,7 @@
                     }
 
                     & h3 {
-                        font-family: var(--font-heading);
+                        font-family: $font-heading;
                         font-size: 3rem;
                     }
 
@@ -694,7 +646,7 @@
                     }
 
                     & h3 {
-                        font-family: var(--font-heading);
+                        font-family: $font-heading;
                         font-size: 3rem;
                     }
 
@@ -708,7 +660,7 @@
                 }
             }
 
-            @media (--small) {
+            @media (max-width: 1024px) {
                 & .content-container {
                     left: 10vw;
                     top: 0vh;
@@ -733,7 +685,7 @@
             }
         }
 
-        @media (--small) {
+        @media (max-width: 1024px) {
             height: 155vh;
         }
 
@@ -755,7 +707,7 @@
 
         & h2 {
             margin-bottom: 1rem;
-            font-family: "Big Caslon FB", "Big Caslon", serif;
+            font-family: $font-heading;
         }
 
         & .content-container {
@@ -776,19 +728,7 @@
                 position: relative;
                 text-decoration: none;
                 font-size: 27px;
-                font-family: "Big Caslon FB", "Big Caslon", serif;
-
-                &:after {
-                    content: " ";
-                    width: 100%;
-                    height: 1px;
-                    position: absolute;
-                    bottom: -6px;
-                    left: 50%;
-                    background: white;
-                    transform: translateX(-50%);
-                    transition: .2s;
-                }
+                font-family: $font-heading;
 
                 &:hover {
                     &:after {
@@ -798,7 +738,7 @@
                 }
             }
 
-            @media (--small) {
+            @media (max-width: 1024px) {
                 width: 76vw;
                 top: 25vh;
                 margin-left: -38vw;
@@ -809,13 +749,13 @@
             }
         }
 
-        @media (--small) {
+        @media (max-width: 1024px) {
             height: 80vh;
         }
     }
 }
 
-@media (--small) {
+@media (max-width: 1024px) {
     .top-title {
         font-size: 36px;
         line-height: 40px;

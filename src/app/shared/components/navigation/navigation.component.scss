@@ -1,3 +1,5 @@
+@import "../../../../styles/variables.scss";
+
 .header {
     position: absolute;
     display: flex;
@@ -83,7 +85,7 @@
         position: relative;
         font-size: 20px;
         cursor: pointer;
-        font-family: var(--font-bau);
+        font-family: $font-bau;
 
         @media (hover: on-demand) {
             &:after {
@@ -123,7 +125,7 @@
         }
     }
 
-    @media (--small) {
+    @media screen and (max-with: $media-width) {
         & .header-item {
             a span {
                 display: none;
