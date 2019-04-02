@@ -20,10 +20,7 @@ export class HomeComponent implements OnInit {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const num = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    console.log('NUM', num);
-    this.opacity = 1 - (1 - num / 3000);
-    this.opacityReverse = 1 - num / 3000;
-    console.log('OPACITY', this.opacity);
-    console.log('===================================');
+    this.opacity = 1 - (1 - num / 5000);
+    this.opacityReverse = 1 - num / 5000;
   }
 }
